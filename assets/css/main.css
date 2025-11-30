@@ -782,3 +782,19 @@ body {
 .experience__description{
     line-height: 1.6;
 }
+/* FIX MOBILE ARROW + TEXT WRAPPING ISSUE */
+
+.skills__item{
+    display: flex;               /* Put arrow and text on same row */
+    align-items: center;
+    gap: 6px;                    /* spacing between arrow and text */
+    white-space: nowrap;        /* prevent line break */
+    font-size: 14px;             /* slightly smaller for small screens */
+}
+
+/* MOBILE RESPONSIVE TWEAK */
+@media (max-width: 480px){
+    .skills__item{
+        font-size: 13px;         /* even smaller for tiny screens */
+    }
+}
